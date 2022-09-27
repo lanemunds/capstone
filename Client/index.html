@@ -4,10 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <title>Fantasy Football</title>
 </head>
-<body>
-    
+<body class="container">
+    <header>
+<h1>Who Should I Start?</h1>
+<h2>A Scape Goat for All of Your Fantasy Football Decisions</h2>
+ </header>
+<main>
+  
+    <form>
+    <input 
+        type='text'
+        id="name"
+        placeholder="Player name"/>
+    <input 
+        type='text'
+        id="projectedPoints"
+        placeholder='Points scored?'/>
+    <input 
+        type='text'
+        id="votes"
+        placeholder='votes'/>
+    <button>add team</button>
+</form>
+
+<section id="playersContainer"></section>
+
+
+    <h2>Pick a Random Player</h2>
+    <button id="hailMary">Hail Mary</button>
+  </div>
+  
+ 
+</main>
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>

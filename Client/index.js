@@ -1,16 +1,3 @@
-const express = require('express')
-const cors = require('cors')
-
-const app = express()
-
-app.use(express.json())
-app.use(cors())
-
-const{
-    getPlayers
-} = require('./controller')
-
-app.get('/getPlayers', getPlayers)
 
 
 
@@ -18,4 +5,64 @@ app.get('/getPlayers', getPlayers)
 
 
 
-app.listen(7000, () => console.log('listening on port 7000'))
+const baseURL = 'http://localhost:5020/api/players'
+const form = document.querySelector('form')
+
+const playersCallback = ({data :players})=>displayPlayers(players)
+const errCallback = err => console.log(err)
+
+const getAllPlayers = () => axios.get(baseURL).then(playersCallback).catch(errCallback)
+
+const createPlayer = body=>axios.post(baseURL,body).then(playersCallback).catch(errCallback)
+
+const deletePlayer = id => axios.delete(`${baseURL}/${id}`).then(playersCallback).catch(errCallback)
+const updatePlayer = (id, type) => axios.put(`${baseURL}/${id}`, {type}).then(playersCallback).catch(errCallback)
+
+
+    function submitHandler(e){
+        e.preventDefault()
+        let name = document.querySelector('#name')
+        let projectedPoints = document.querySelector('#projectedPoints')
+        let votes = document.querySelector('#votes')
+
+        let bodyObj = {
+            name : name.value ,
+            projectedPoints : projectedPoints.value,
+            votes: votes.value
+        }
+        createPlayer(bodyObj)
+        name.value = ''
+        projectedPoints.value =''
+        votes.value = ''
+
+
+    }
+
+    function createPlayerCard(player){
+        const playerCard = document.createElement('div')
+        playerCard.classList.add('player-card')
+
+        playerCard.innerHTML = `
+        <p class="name">${player.name}</p>
+        <div class = 'btns-container'>
+            <button onclick = "updatePlayer(${player.id}, 'minus')">-</button>
+            <p class="votes">${player.votes}</p>
+            <button onclick = "updatePlayer(${player.id}, 'plus')">+</button>
+        </div>
+        <button onclick= "deletePlayer(${player.id})">delete</button>
+        `
+
+        playersContainer.appendChild(playerCard)
+    }
+
+    function displayPlayers(arr){
+        playersContainer.innerHTML = ``
+        for(let i = 0; i <arr.length; i++){
+            createPlayerCard(arr[i])
+        }
+    }
+    form.addEventListener('submit', submitHandler)
+    getAllPlayers()
+
+
+
