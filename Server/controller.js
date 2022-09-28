@@ -13,11 +13,11 @@ module.exports = {
         res.status(200).send(players)
     },
     createPlayer:(req,res)=>{
-        const {name, projectedPoints,votes} = req.body
+        const {name, projectedPoints} = req.body
         let newPlayer = {
             name,
             projectedPoints : Number(projectedPoints) ,
-            votes,
+            votes: 0,
             id: globalID
         }
         console.log(newPlayer)

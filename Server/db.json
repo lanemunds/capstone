@@ -1,20 +1,20 @@
 [
     {
-        "playerId":"1",
+        "id": 1,
         "name": "Josh Allen",
         "projectedPoints": "32",
-        "votes": "0"
+        "votes": 0
         },
         {
-            "playerId":"2",
+            "id": 2,
             "name":"Patrick Mahomes",
             "projectedPoints": "27.5",
-            "votes": "0"
+            "votes": 0
         },
         {
-            "playerId":"3",
+            "id": 3,
             "name": "Justin Herbert",
             "projectedPoints" : "25",
-            "votes": "0"
+            "votes": 0
         }
 ]
