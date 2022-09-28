@@ -3,18 +3,21 @@
         "id": 1,
         "name": "Josh Allen",
         "projectedPoints": "32",
+        "position": "QB",
         "votes": 0
         },
         {
             "id": 2,
             "name":"Patrick Mahomes",
             "projectedPoints": "27.5",
+            "position": "QB",
             "votes": 0
         },
         {
             "id": 3,
             "name": "Justin Herbert",
             "projectedPoints" : "25",
+            "position": "QB",
             "votes": 0
         }
 ]

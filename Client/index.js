@@ -22,17 +22,17 @@ const updatePlayer = (id, type) => axios.put(`${baseURL}/${id}`, {type}).then(pl
     function submitHandler(e){
         e.preventDefault()
         let name = document.querySelector('#name')
-        let projectedPoints = document.querySelector('#projectedPoints')
+        let position = document.querySelector('#position')
         let votes = document.querySelector('#votes')
 
         let bodyObj = {
             name : name.value ,
-            projectedPoints : projectedPoints.value,
+            position : position.value,
             votes: votes.value
         }
         createPlayer(bodyObj)
         name.value = ''
-        projectedPoints.value =''
+        position.value =''
         votes.value = ''
 
 
@@ -44,6 +44,7 @@ const updatePlayer = (id, type) => axios.put(`${baseURL}/${id}`, {type}).then(pl
 
         playerCard.innerHTML = `
         <p class="name">${player.name}</p>
+        <p class="name">${player.position}</p>
         <div class = 'btns-container'>
             <button onclick = "updatePlayer(${player.id}, 'minus')">-</button>
             <p class="votes">${player.votes}</p>
@@ -66,3 +67,10 @@ const updatePlayer = (id, type) => axios.put(`${baseURL}/${id}`, {type}).then(pl
 
 
 
+function randomPlayer(event){
+    event.preventDefault()
+    alert('Random Player')
+}
+
+const random = document.querySelector('#hailMary')
+random.addEventListener('click',randomPlayer)
