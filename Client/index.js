@@ -17,7 +17,7 @@ const createPlayer = body=>axios.post(baseURL,body).then(playersCallback).catch(
 
 const deletePlayer = id => axios.delete(`${baseURL}/${id}`).then(playersCallback).catch(errCallback)
 const updatePlayer = (id, type) => axios.put(`${baseURL}/${id}`, {type}).then(playersCallback).catch(errCallback)
-
+const randomPlayer = () => axios.get(`${baseURL}`).catch(errCallback)
 
     function submitHandler(e){
         e.preventDefault()
@@ -67,10 +67,25 @@ const updatePlayer = (id, type) => axios.put(`${baseURL}/${id}`, {type}).then(pl
 
 
 
-function randomPlayer(event){
+function giveRandomPlayer(event){
     event.preventDefault()
-    alert('Random Player')
+let rid = 14876
+
+
+    axios
+    .get(`https://site.web.api.espn.com/apis/common/v3/sports/football/nfl/athletes/${rid}`)
+    .then((response)=>{
+        console.log(response.data)
+        let ranPlayer = response.data.athlete.displayName+' '
+        +response.data.athlete.position.abbreviation+' '
+        +response.data.athlete.team.displayName
+        
+        let style = document.createElement('H2')
+        style.innerHTML = ranPlayer
+        document.body.appendChild(style)
+        alert(ranPlayer)
+    })
 }
 
 const random = document.querySelector('#hailMary')
-random.addEventListener('click',randomPlayer)
+random.addEventListener('click',giveRandomPlayer)

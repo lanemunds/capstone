@@ -1,6 +1,6 @@
 const express = require('express')
 const cors = require('cors')
-
+const espn  = require('espn-fantasy-football-api/node')
 const app = express()
 
 app.use(express.json())
@@ -8,7 +8,9 @@ app.use(cors())
 
 
 
-const {getPlayers, deletePlayer, updatePlayer, createPlayer}= require('./controller')
+const {getPlayers, deletePlayer, updatePlayer, createPlayer,randomPlayer}= require('./controller')
+
+
 
 app.get('/api/players', getPlayers)
 app.delete('/api/players/:id', deletePlayer)

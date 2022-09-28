@@ -39,7 +39,4 @@ module.exports = {
         }
     
     }
-    
-
-
 }
