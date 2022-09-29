@@ -8,13 +8,20 @@
     <title>Fantasy Football</title>
 </head>
 <body class="container">
+    <header id="nav">
+        <button class="navButtons"><h2><a href="./second.html">Rankings</a></h2></button>
+
+      </header>
     <header>
 <h1>Who Should I Start?</h1>
+<div>
 <h2>A Scape Goat for All of Your Fantasy Football Decisions</h2>
+</div>
  </header>
 <main>
   
     <form>
+        <h2>Add A Player</h2>
     <input 
         type='text'
         id="name"
@@ -25,18 +32,42 @@
         placeholder='Player Position'/>
     <input 
         type='text'
-        id="votes"
-        placeholder='votes'/>
-    <button>add team</button>
+        id="imageURL"
+        placeholder='Image URL'/>
+    <button>Add Player</button>
 </form>
 
-<section id="playersContainer"></section>
+<section id="playersContainer">Who Would You Start Vote</section>
 
-
-    <h2>Pick a Random Player</h2>
+<div id="randomatic">
+    <h1>Pick a Random Player</h1>
+    <button id="hailMaryQB">Random QB</button>
+    <button id="hailMaryWR">Random WR</button>
+    <button id="hailMaryRB">Random RB</button>
     <button id="hailMary">Hail Mary</button>
+<section id="randomTeamBox">
+    <h1>Team of Random Players</h1>
+    <div>
+        <h3>QuarterBacks</h3>
+        <ul  id="randQbBox"></ul>
+    </div>
+    <div>
+        <h3>Wide Receivers</h3>
+        <ul  id="randWrBox"></ul>
+    </div>
+    <div>
+        <h3>Running Backs</h3>
+        <ul  id="randRbBox"></ul>
+    </div>
+
+
+
+
+</section>
+
+
+
   </div>
-  
  
 </main>
 

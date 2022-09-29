@@ -13,9 +13,10 @@ module.exports = {
         res.status(200).send(players)
     },
     createPlayer:(req,res)=>{
-        const {name, position} = req.body
+        const {name, position,imageURL} = req.body
         let newPlayer = {
             name,
+            imageURL,
             position,
             votes: 0,
             id: globalID

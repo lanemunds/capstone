@@ -4,20 +4,23 @@
         "name": "Josh Allen",
         "projectedPoints": "32",
         "position": "QB",
-        "votes": 0
+        "votes": 0,
+        "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3918298.png"
         },
         {
             "id": 2,
             "name":"Patrick Mahomes",
             "projectedPoints": "27.5",
             "position": "QB",
-            "votes": 0
+            "votes": 0 ,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3139477.png&w=350&h=254"
         },
         {
             "id": 3,
             "name": "Justin Herbert",
             "projectedPoints" : "25",
             "position": "QB",
-            "votes": 0
+            "votes": 0,
+            "imageURL":"https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4038941.png&w=350&h=254"
         }
 ]
