@@ -140,8 +140,7 @@ axios
     })
 }
 
-  
-    
+
 
 const randomqb = document.querySelector('#hailMaryQB')
 randomqb.addEventListener('click',giveRandomQB)

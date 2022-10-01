@@ -1,6 +1,8 @@
-let qbArr = [14876, 2577417 , 3046779 ]
-const random = (event)=>{
-    event.preventDefault()
-let qrid = Math.floor(Math.random() * qbArr.length)
-return qrid
+function goToNewPage()
+{
+    var url = document.getElementById('positions').value;
+    if(url != 'none') {
+        window.location = url;
+    }
 }
+    
