@@ -22,5 +22,29 @@
             "position": "QB",
             "votes": 0,
             "imageURL":"https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4038941.png&w=350&h=254"
+        },
+        {
+            "id": 4,
+            "name": "Lamar Jackson",
+            "projectedPoints" : "25",
+            "position": "QB",
+            "votes": 0,
+            "imageURL":"https://static.www.nfl.com/image/private/t_player_profile_landscape/f_auto/league/gylnuxkxgm3zd4j0d0ku"
+        },
+        {
+            "id": 5,
+            "name": "Jalen Hurts",
+            "projectedPoints" : "25",
+            "position": "QB",
+            "votes": 0,
+            "imageURL":"https://b.fssta.com/uploads/application/nfl/headshots/21495.vresize.350.350.medium.30.png"
+        },
+        {
+            "id": 6,
+            "name": "Joe Burrow",
+            "projectedPoints" : "25",
+            "position": "QB",
+            "votes": 0,
+            "imageURL":"https://static.www.nfl.com/image/private/t_player_profile_landscape/f_auto/league/pbl27kxsr5ulgxmvtvfn"
         }
 ]

@@ -7,7 +7,8 @@
     <title>Running Back Rankings</title>
     <link rel="stylesheet" href="./index.css">
 </head>
-<body>
+<body class="rankBody">
+    
     <header id="nav">
         <button class="navButtons"><h2><a href="./index.html">Home</a></h2></button>
        
@@ -15,7 +16,7 @@
 
        <section id="rankings">
         
-        <form>
+        <form class="where">
         <h1>Where to?</h1>
         <select name="positions" id="positions" >
             <option disabled selected>position</option>
@@ -24,14 +25,14 @@
             <option value="./wr.html">Wide Receivers</option>
             <option value="./rb.html">Running Backs</option>
 </select>
-<input type="button" value="go" onclick="goToNewPage()"/>
+<input class="go" type="button" value="go" onclick="goToNewPage()"/>
 </section>
     </form>
 
 
    
-
-    <div class="rank"><h2>Running Backs</h2>
+    <h2 class="posHead">Running Backs</h2>
+    <div class="rank">
         <ol>
             <li>johnathan Taylor</li>
             <li>Christian McCaffrey</li>
@@ -61,7 +62,7 @@
             <li>Kareem Hunt</li>
         </ol>
         </div>
-
+        
 
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

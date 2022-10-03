@@ -7,15 +7,15 @@
     <title>Quarteback Rankings</title>
     <link rel="stylesheet" href="./index.css">
 </head>
-<body>
+<body class="rankBody">
     <header id="nav">
         <button class="navButtons"><h2><a href="./index.html">Home</a></h2></button>
        
        </header> 
        <section id="rankings">
-        
-        <form>
-        <h1>Where to?</h1>
+           
+           <form class="where">
+            <h1>Where to?</h1>
         <select name="positions" id="positions" >
             <option disabled selected>position</option>
             <option value="./second.html">Rankings Home</option>
@@ -23,13 +23,13 @@
             <option value="./wr.html">Wide Receivers</option>
             <option value="./rb.html">Running Backs</option>
 </select>
-<input type="button" value="go" onclick="goToNewPage()"/>
+<input class="go" type="button" value="go" onclick="goToNewPage()"/>
 </section>
     </form>
 
     
-
-    <div class="rank"><h1>QuarterBacks</h1>
+    <h1 class="posHead">QuarterBacks</h1>
+    <div class="rank"> 
         <ol>
           <li>Josh Allen</li>
           <li>Patrick Mahomes</li>

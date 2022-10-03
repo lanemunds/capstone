@@ -2,8 +2,12 @@
   body {
     background-color: #BCD0C7;
     color: #C5DAC1;
+    background-image: url("https://images.unsplash.com/photo-1557174949-3b1f5b2e8fac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80");
   }
   
+  
+
+ 
 
   main {
     display: flex; 
@@ -13,7 +17,7 @@
   form {
     width: 350px;
     height: 350px;
-    background-color: #137547;
+    background-color: #A9B2AC;
     position: relative;
     display: flex; 
     flex-direction: column;
@@ -21,17 +25,18 @@
     align-items: center;
     margin: 30px;
     box-shadow: 8px 4px 4px black;
+    border: 5px solid #137547;
   }
   
   button {
-    background-color: #A9B2AC;
+    background-color: #137547;
     width: 75px;
     height: 50px;
-    color: black;
-    border: none;
+    color: #C5DAC1;
     margin: 5px;
     border-radius: 100%;
     box-shadow: 8px 4px 4px black;
+    border: 2px solid black;
   }
   
   
@@ -46,13 +51,13 @@
   }
   
   
- 
+
   #playersContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-  }
+    width: 1100px;
+   }
   
   .teamLogo {
     width: 300px; 
@@ -69,8 +74,8 @@
     flex-direction: column;
     align-items: center;
     border-radius: 12px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border: 5px solid #A9B2AC;
+  
     box-shadow: 10px 5px 5px black;
    
   }
@@ -94,11 +99,16 @@
   }
 
   #randomatic {
-    background-color: #137547;
-    border: #232323;
-    border-width: 2pt;
-    border-style:groove;
+    background-color: #A9B2AC;
+    border: 5px solid black;
     box-shadow: 5px 4px 4px black;
+    width: 400px;
+    position: fixed;
+    right: 10px;
+    top: 246px;
+    display: flexbox;
+    justify-content: center;
+   
    }
 
    .playerimg {
@@ -129,6 +139,83 @@ height: 75px;
  }
 
  .rank {
-  background-color: #137547;
-  flex: 50%;
+  background-color: #A9B2AC;
+  position: relative;
+  left: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+ box-shadow: 5px 5px 5px black;
+  font-size: 18pt;
+  border: 5px solid #137547;
+  
+  border-radius: 20px;
+  padding: 5px;
+  
  }
+
+ .where {
+  background-color: #A9B2AC;
+  position: fixed;
+  left: 100px;
+  top: 250px;
+  color: #C5DAC1;
+  height: 330px;
+  width: 330px;
+  font-size: 30pt;
+  border: 5px solid #137547;
+  border-radius: 20px;
+  
+ }
+
+ .rankBody {
+  
+  background-image: url("https://images.unsplash.com/photo-1566577739112-5180d4bf9390?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1926&q=80");
+ }
+ .go {
+  width: 40px;
+  height: 40px;
+  background-color: #137547;
+  color: #C5DAC1;
+  border-radius: 100%;
+ border: 1px solid black;
+ }
+ #positions{
+  height: 40px;
+  background-color: #137547;
+  color: #C5DAC1;
+  border: 2px solid black;
+ }
+
+ .posHead{
+  width: 400px;
+  display: flex;
+  justify-content: center;
+ position:relative ;
+  left: 740px;
+  background-color: #137547;
+  font-size: 40pt;
+  border-radius: 20px;
+  padding: 20px;
+  border: 5px solid #A9B2AC;
+  box-shadow: 5px 5px 5px black;
+  
+ }
+
+ #add {
+  position: fixed;
+  left: 20px;
+  top: 220px;
+ }
+#homeHead{
+  width: 50%;
+  position: relative;
+  left: 500px;
+  border: 5px solid #A9B2AC;
+}
+ 
+#randoButts{
+  display: flexbox;
+  justify-content: space-around;
+}
