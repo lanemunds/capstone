@@ -106,8 +106,7 @@
     position: fixed;
     right: 10px;
     top: 246px;
-    display: flexbox;
-    justify-content: center;
+   
    
    }
 
@@ -216,6 +215,8 @@ height: 75px;
 }
  
 #randoButts{
-  display: flexbox;
+  width: 100%;
+  display: flex;
   justify-content: space-around;
+  
 }
