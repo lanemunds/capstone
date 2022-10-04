@@ -9,7 +9,7 @@ app.use(cors())
 
 
 
-const {getPlayers, deletePlayer, updatePlayer, createPlayer}= require('./controller')
+const {getPlayers, deletePlayer, updatePlayer, createPlayer}= require('/controller')
 
 
 
