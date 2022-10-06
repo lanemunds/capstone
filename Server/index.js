@@ -21,11 +21,11 @@ app.put('/api/players/:id', updatePlayer)
 app.use('/', express.static(path.join(__dirname, '../client/index.html')))
 app.use('/', express.static(path.join(__dirname, '../client/index.css')))
 app.use('/', express.static(path.join(__dirname, '../client/index.js')))
-// app.use('/', express.static(path.join(__dirname, '.../client/second.html')))
-// app.use('/', express.static(path.join(__dirname, '.../client/rb.html')))
-// app.use('/', express.static(path.join(__dirname, '.../client/wr.html')))
-// app.use('/', express.static(path.join(__dirname, '.../client/qb.html')))
-app.use(express.static(path.join(__dirname,('../client'))))
+// app.use('/', express.static(path.join(__dirname, '../client/second.html')))
+// app.use('/', express.static(path.join(__dirname, '../client/rb.html')))
+// app.use('/', express.static(path.join(__dirname, '../client/wr.html')))
+// app.use('/', express.static(path.join(__dirname, '../client/qb.html')))
+
 
 
 app.listen(port, () => console.log('listening on port ')+ port)
