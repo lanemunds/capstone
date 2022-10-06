@@ -30,4 +30,4 @@ app.use(express.static(path.join(__dirname, '../client')))
 
 
 
-app.listen(port, () => console.log('listening on port ')+ port)
+app.listen(port, () => console.log(`listening on port ${port}`))
