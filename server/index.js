@@ -8,7 +8,7 @@ app.use(express.json())
 app.use(cors())
 const path = require('path')
 
-a
+
 const {getPlayers, deletePlayer, updatePlayer, createPlayer}= require('./controller.js')
 
 
