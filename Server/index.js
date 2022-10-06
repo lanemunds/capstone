@@ -18,9 +18,9 @@ app.delete('/api/players/:id', deletePlayer)
 app.post('/api/players', createPlayer)
 app.put('/api/players/:id', updatePlayer)
 app.get('/', (req,res) => {
-    res.sendFile(path.join(__dirname, '../client/index.html'))
+    res.sendFile(path.join(__dirname, '../Client/index.html'))
 } )
-app.use(express.static(path.join(__dirname, '../client')))
+app.use(express.static(path.join(__dirname, '../Client')))
 
 
 
