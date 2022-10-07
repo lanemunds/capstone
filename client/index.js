@@ -1,5 +1,5 @@
 
-const baseURL = '/api/players'
+const baseURL = 'https://fantasy-football-scapegoat.herokuapp.com/api/players'
 const form = document.querySelector('form')
 
 
