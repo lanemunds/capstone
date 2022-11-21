@@ -15,11 +15,11 @@
     align-items: center;
     margin: 30px;
     box-shadow: 8px 4px 4px black;
-    border: 5px solid #137547;
+    border: 5px solid black;
   }
   
   button {
-    background-color: #137547;
+    background-color: black;
     width: 75px;
     height: 50px;
     color: white;
@@ -72,7 +72,7 @@
     flex-direction: column;
     align-items: center;
     border-radius: 12px;
-    border: 5px solid #137547;
+    border: 5px solid black;
   
     box-shadow: 10px 5px 5px black;
    
@@ -131,7 +131,7 @@
   width: 300px;
  box-shadow: 5px 5px 5px black;
   font-size: 18pt;
-  border: 5px solid #137547;
+  border: 5px solid black;
   margin-top: 5rem;
   
   border-radius: 20px;
@@ -147,7 +147,7 @@
   color: white;
   height: 330px;
   width: 330px;
-  border: 5px solid #137547;
+  border: 5px solid black;
   border-radius: 20px;
   
  }
@@ -159,14 +159,14 @@
  .go {
   width: 40px;
   height: 40px;
-  background-color: #137547;
+  background-color: black;
   color: white;
   border-radius: 100%;
  border: 1px solid black;
  }
  #positions{
   height: 40px;
-  background-color: #137547;
+  background-color: black;
   color: white;
   border: 2px solid black;
  }
