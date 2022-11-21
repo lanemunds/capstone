@@ -1,83 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
     <title>Fantasy Football Home</title>
-</head>
-<body class="container">
-    <header id="nav">
-        <button class="navButtons"><h2><a href="./second.html">Rankings</a></h2></button>
-
-      </header>
+  </head>
+  <body class = "home_body">
+        <nav class="navbar navbar-dark bg-dark navbar-expand">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse">
+        <a class="nav-link nav-size" href="./second.html">Rankings</a>
+         <a class="nav-link nav-size" href="./random.html">Random Player Selector</a>
+        </div>
+        </div>
+    </nav>
     <header id="homeHead">
-<h1>Who Should I Start?</h1>
-<h2>A Scape Goat for All of Your Fantasy Football Decisions</h2>
-<div>
-<h2>Which of These QBS Would you Start?</h2>
-</div>
- </header>
-<main>
-  
-    <form id="add">
+      <h1>Who Should I Start?</h1>
+      <div>
+        <h2>Which of These QBS Would you Start?</h2>
+      </div>
+    </header>
+    <main>
+        <section id = "add_player">
+      <form id="add">
         <h2>Add A Player</h2>
-    <input 
-        type='text'
-        id="name"
-        placeholder="Player Name"/>
-        <input 
-        type='text'
-        id="imageURL"
-        placeholder='Image URL'/>
+        <input type="text" id="name" placeholder="Player Name" />
+        <input type="text" id="imageURL" placeholder="Image URL" />
         <label for="posquest">Choose A position</label>
-    <select name= "posquest" id="position">
-        <option value="WR">WR</option>
-        <option value="WR">QB</option>
-        <option value="WR">RB</option>
-       </select>
-    
-    <button>Add Player</button>
-</form>
+        <select name="posquest" id="position">
+          <option value="WR">WR</option>
+          <option value="WR">QB</option>
+          <option value="WR">RB</option>
+        </select>
 
-<section id="playersContainer">Who Would You Start Vote</section>
-<section id="addBox"></section>
-<div id="randomatic">
-    <h1>Pick a Random Player</h1>
-    <div id="randoButts">
-    <button id="hailMaryQB">Random QB</button>
-    <button id="hailMaryWR">Random WR</button>
-    <button id="hailMaryRB">Random RB</button>
-    </div>
-<section id="randomTeamBox">
-    <h1>Team of Random Players</h1>
-    <div>
-        <h3>QuarterBacks</h3>
-        <ul  id="randQbBox"></ul>
-    </div>
-    <div>
-        <h3>Wide Receivers</h3>
-        <ul  id="randWrBox"></ul>
-    </div>
-    <div>
-        <h3>Running Backs</h3>
-        <ul  id="randRbBox"></ul>
-    </div>
+        <button>Add Player</button>
+      </form>
+    </section>
+      <section id="playersContainer"></section>
+      <section id="addBox"></section>
+      <!-- <div id="randomatic">
+        <h1>Pick a Random Player</h1>
+        <div id="randoButts">
+          <button id="hailMaryQB">Random QB</button>
+          <button id="hailMaryWR">Random WR</button>
+          <button id="hailMaryRB">Random RB</button>
+        </div>
+        <section id="randomTeamBox">
+          <h1>Team of Random Players</h1>
+          <div>
+            <h3>QuarterBacks</h3>
+            <ul id="randQbBox"></ul>
+          </div>
+          <div>
+            <h3>Wide Receivers</h3>
+            <ul id="randWrBox"></ul>
+          </div>
+          <div>
+            <h3>Running Backs</h3>
+            <ul id="randRbBox"></ul>
+          </div>
+        </section>
+      </div>
+    </main> -->
 
-
-
-
-</section>
-
-
-
-  </div>
- 
-</main>
-
-
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>

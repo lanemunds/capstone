@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <title>Fantasy Football Home</title>
+  </head>
+  <body class="home_body">
+    <nav class="navbar navbar-dark bg-dark navbar-expand">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse">
+          <a class="nav-link nav-size" href="./index.html">Home</a>
+          <a class="nav-link nav-size" href="./second.html">Rankings</a>
+        </div>
+      </div>
+    </nav>
+    <h1>Pick a Random Player</h1>
+    <div id="randoButts">
+      <button id="hailMaryQB">Random QB</button>
+      <button id="hailMaryWR">Random WR</button>
+      <button id="hailMaryRB">Random RB</button>
+    </div>
+    <section id="randomTeamBox">
+      <h1>Team of Random Players</h1>
+      <div>
+        <h3>QuarterBacks</h3>
+        <ul id="randQbBox"></ul>
+      </div>
+      <div>
+        <h3>Wide Receivers</h3>
+        <ul id="randWrBox"></ul>
+      </div>
+      <div>
+        <h3>Running Backs</h3>
+        <ul id="randRbBox"></ul>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./second.js"></script>
+  </body>
+</html>

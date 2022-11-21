@@ -1,22 +1,12 @@
   
-  body {
-    background-color: #BCD0C7;
-    color: #C5DAC1;
-    background-image: url("https://images.unsplash.com/photo-1557174949-3b1f5b2e8fac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80");
-  }
-  
-  
-
- 
-
-  main {
-    display: flex; 
-    justify-content: center;
+  .home_body {
+    background-color: #8d99ae;
+    color: whitesmoke ;
   }
   
   form {
-    width: 350px;
-    height: 350px;
+    width: 20rem;
+    height: 20rem;
     background-color: #A9B2AC;
     position: relative;
     display: flex; 
@@ -32,7 +22,7 @@
     background-color: #137547;
     width: 75px;
     height: 50px;
-    color: #C5DAC1;
+    color: white;
     margin: 5px;
     border-radius: 100%;
     box-shadow: 8px 4px 4px black;
@@ -56,7 +46,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 1100px;
+    width: 70%;
+    position: absolute;
+    right: 0rem;
+  
+   }
+   #addbox{
+    width: 20%;
+    position: absolute;
+    left: 0rem;
    }
   
   .teamLogo {
@@ -67,14 +65,14 @@
   }
   
   .player-card {
-    background-color: #137547;
+    background-color: #A9B2AC;
     width: 300px;
     margin: 20px; 
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 12px;
-    border: 5px solid #A9B2AC;
+    border: 5px solid #137547;
   
     box-shadow: 10px 5px 5px black;
    
@@ -87,10 +85,10 @@
   }
   
   .btns-container > button {
-    width: 20px;
+    width: 30px;
+    border-radius: 100%;
   }
   header {
-    background-color: #137547;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,20 +112,6 @@
     height: 250px;
     width: 300px;
    }
- #nav {
-background-color: darkslategray;
-color: #C5DAC1;
-height: 75px;
- }
-
- .navButtons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap:wrap;
-  width: 100px;
-  
- }
 
  #rankings {
   display: flex;
@@ -140,7 +124,7 @@ height: 75px;
  .rank {
   background-color: #A9B2AC;
   position: relative;
-  left: 1400px;
+  left: 70rem; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,6 +132,7 @@ height: 75px;
  box-shadow: 5px 5px 5px black;
   font-size: 18pt;
   border: 5px solid #137547;
+  margin-top: 5rem;
   
   border-radius: 20px;
   padding: 5px;
@@ -159,10 +144,9 @@ height: 75px;
   position: fixed;
   left: 100px;
   top: 250px;
-  color: #C5DAC1;
+  color: white;
   height: 330px;
   width: 330px;
-  font-size: 30pt;
   border: 5px solid #137547;
   border-radius: 20px;
   
@@ -176,47 +160,29 @@ height: 75px;
   width: 40px;
   height: 40px;
   background-color: #137547;
-  color: #C5DAC1;
+  color: white;
   border-radius: 100%;
  border: 1px solid black;
  }
  #positions{
   height: 40px;
   background-color: #137547;
-  color: #C5DAC1;
+  color: white;
   border: 2px solid black;
  }
-
- .posHead{
-  width: 400px;
-  display: flex;
-  justify-content: center;
- position:relative ;
-  left: 740px;
-  background-color: #137547;
-  font-size: 40pt;
-  border-radius: 20px;
-  padding: 20px;
-  border: 5px solid #A9B2AC;
-  box-shadow: 5px 5px 5px black;
-  
- }
-
  #add {
   position: fixed;
   left: 20px;
   top: 220px;
  }
-#homeHead{
-  width: 50%;
-  position: relative;
-  left: 500px;
-  border: 5px solid #A9B2AC;
-}
  
 #randoButts{
   width: 100%;
   display: flex;
   justify-content: space-around;
   
+}
+
+header{
+  background-color: #8d99ae;
 }
