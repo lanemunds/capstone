@@ -1,100 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Running Back Rankings</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css" />
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-    crossorigin="anonymous"
-  />
-  <title>Fantasy Football Home</title>
-</head>
-<body class = "home_body">
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <title>Fantasy Football Home</title>
+  </head>
+  <body class="home_body">
     <nav class="navbar navbar-dark bg-dark navbar-expand">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target = "#main_menu" aria-controls="main_menu" aria-expanded="false">
-          <span class= "navbar-toggler-icon"></span>
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main_menu"
+          aria-controls="main_menu"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div id = "main_menu" class="collapse navbar-collapse">
-                <ul class="navbar-nav me-auto">
-                <li class= "nav-item"><a class = "nav-link" href="./index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="./random.html">Random Player</a></li>
-      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" role="button" data-bs-toggle = "dropdown" href = "">Rankings</a>
-        <ul class="dropdown-menu">
-          <li><a class= "dropdown-item" href="./second.html">Rankings Home</a></li>
-          <li><a class= "dropdown-item" href="./qb.html">Quarterbacks</a></li>
-          <li><a class= "dropdown-item" href="./rb.html">Running Backs</a></li>
-          <li><a class= "dropdown-item" href="./wr.html">Wide Receivers</a></li>
-          
-         
-        </ul>
-        </li>
-      </ul>
-      </div>
-      </div>
-  </nav>
-  <header><h1>Running Backs</h1></header>
-       <section id="rankings">
-        
-        <form class="where">
-        <h1>Where to?</h1>
-        <select name="positions" id="positions" >
-            <option disabled selected>position</option>
-            <option value="./second.html">Rankings Home</option>
-            <option value="./qb.html">QuarterBacks</option>
-            <option value="./wr.html">Wide Receivers</option>
-            <option value="./rb.html">Running Backs</option>
-</select>
-<input class="go" type="button" value="go" onclick="goToNewPage()"/>
-</section>
-    </form>
-
-
-   
-    <div class="rank">
-        <ol>
-            <li>johnathan Taylor</li>
-            <li>Christian McCaffrey</li>
-            <li>Saquon Barkley</li>
-            <li>Nick Chubb</li>
-            <li>Joe Mixon</li>
-            <li>Leonard Fournette</li>
-            <li>Derrick Henry</li>
-            <li>Aaron Jones</li>
-            <li>Jamaal Williams</li>
-            <li>Najee Harris</li>
-            <li>Austin Ekeler</li>
-            <li>Alvin Kamara</li>
-            <li>Cordarrelle Patterson</li>
-            <li>Dalvin Cook</li>
-            <li>Javonte Williams</li>
-            <li>Miles Sanders</li>
-            <li>Dameon Pierce</li>
-            <li>James Conner</li>
-            <li>Khalil Herbert</li>
-            <li>James Robinson</li>
-            <li>AJ Dillon</li>
-            <li>Jeff Wilson</li>
-            <li>Ezekiel Elliott</li>
-            <li>Antonio Gibson </li>
-            <li>Josh Jacobs</li>
-            <li>Kareem Hunt</li>
-        </ol>
+        <div id="main_menu" class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./random.html">Random Player</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                href=""
+                >Rankings</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./second.html"
+                    >Rankings Home</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./qb.html">Quarterbacks</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./rb.html">Running Backs</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./wr.html">Wide Receivers</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
-        
-
-
+      </div>
+    </nav>
+    <header><h1>Running Backs</h1></header>
+    <div class="rank">
+      <ol>
+        <li>johnathan Taylor</li>
+        <li>Christian McCaffrey</li>
+        <li>Saquon Barkley</li>
+        <li>Nick Chubb</li>
+        <li>Joe Mixon</li>
+        <li>Leonard Fournette</li>
+        <li>Derrick Henry</li>
+        <li>Aaron Jones</li>
+        <li>Jamaal Williams</li>
+        <li>Najee Harris</li>
+        <li>Austin Ekeler</li>
+        <li>Alvin Kamara</li>
+        <li>Cordarrelle Patterson</li>
+        <li>Dalvin Cook</li>
+        <li>Javonte Williams</li>
+        <li>Miles Sanders</li>
+        <li>Dameon Pierce</li>
+        <li>James Conner</li>
+        <li>Khalil Herbert</li>
+        <li>James Robinson</li>
+        <li>AJ Dillon</li>
+        <li>Jeff Wilson</li>
+        <li>Ezekiel Elliott</li>
+        <li>Antonio Gibson</li>
+        <li>Josh Jacobs</li>
+        <li>Kareem Hunt</li>
+      </ol>
+    </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./playerArrays.js"></script>
     <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"
-  ></script>
-</body>
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
